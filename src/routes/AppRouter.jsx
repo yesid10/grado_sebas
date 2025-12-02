@@ -6,12 +6,16 @@ import PhotoGallery from '../components/PhotoGallery';
 import RSVP from '../components/RSVP';
 import Footer from '../components/Footer';
 import Decorations from '../components/Decorations';
+import BackgroundMusic from '../components/BackgroundMusic';
 
 const AppRouter = () => {
     return (
         <div className="min-h-screen">
             {/* Background Decorations */}
             <Decorations />
+
+            {/* Background Music */}
+            <BackgroundMusic />
 
             {/* Main Content */}
             <main className="flex flex-col gap-9 z-10">
