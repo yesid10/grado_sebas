@@ -1,0 +1,308 @@
+@import "tailwindcss";
+
+/* ============================================
+   GRADUATION INVITATION - DESIGN SYSTEM
+   Black & Gold Elegant Theme
+   ============================================ */
+
+@theme {
+  /* Custom Color Palette - Black & Gold */
+  --color-primary-black: #0a0a0a;
+  --color-secondary-black: #1a1a1a;
+  --color-dark-gray: #2a2a2a;
+  
+  --color-gold-light: #f4d03f;
+  --color-gold: #d4af37;
+  --color-gold-dark: #c5a028;
+  --color-gold-darker: #9d7e1f;
+  
+  --color-white-soft: #f8f8f8;
+  --color-gray-light: #e0e0e0;
+  --color-gray-medium: #999999;
+  
+  /* Typography */
+  --font-family-serif: 'Playfair Display', serif;
+  --font-family-script: 'Great Vibes', cursive;
+  --font-family-sans: 'Inter', sans-serif;
+  
+  /* Spacing */
+  --spacing-section: 6rem;
+  
+  /* Animations */
+  --animate-duration-slow: 1.5s;
+  --animate-duration-medium: 0.8s;
+  --animate-duration-fast: 0.3s;
+}
+
+/* ============================================
+   BASE STYLES
+   ============================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-sans);
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
+  color: var(--color-white-soft);
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* ============================================
+   CUSTOM ANIMATIONS
+   ============================================ */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(-100vh) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse-gold {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+
+.animate-fade-in-up {
+  animation: fadeInUp var(--animate-duration-medium) ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn var(--animate-duration-slow) ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn var(--animate-duration-medium) ease-out forwards;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-rotate {
+  animation: rotate 20s linear infinite;
+}
+
+.animate-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(212, 175, 55, 0.1) 0%,
+    rgba(244, 208, 63, 0.3) 50%,
+    rgba(212, 175, 55, 0.1) 100%
+  );
+  background-size: 2000px 100%;
+  animation: shimmer 3s infinite;
+}
+
+.animate-pulse-gold {
+  animation: pulse-gold 2s ease-in-out infinite;
+}
+
+/* ============================================
+   GRADIENT TEXT
+   ============================================ */
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #f4d03f 0%, #d4af37 50%, #c5a028 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ============================================
+   GLASSMORPHISM EFFECTS
+   ============================================ */
+
+.glass-card {
+  background: rgba(26, 26, 26, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.glass-card-light {
+  background: rgba(42, 42, 42, 0.4);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+/* ============================================
+   DECORATIVE ELEMENTS
+   ============================================ */
+
+.gold-border {
+  border: 2px solid;
+  border-image: linear-gradient(135deg, #f4d03f, #d4af37, #c5a028) 1;
+}
+
+.gold-border-thin {
+  border: 1px solid rgba(212, 175, 55, 0.5);
+}
+
+/* ============================================
+   BUTTON STYLES
+   ============================================ */
+
+.btn-gold {
+  background: linear-gradient(135deg, #f4d03f 0%, #d4af37 50%, #c5a028 100%);
+  color: #0a0a0a;
+  font-weight: 600;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(212, 175, 55, 0.6);
+}
+
+.btn-gold:active {
+  transform: translateY(0);
+}
+
+.btn-outline-gold {
+  background: transparent;
+  color: #d4af37;
+  border: 2px solid #d4af37;
+  padding: 0.875rem 2.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+.btn-outline-gold:hover {
+  background: linear-gradient(135deg, #f4d03f 0%, #d4af37 50%, #c5a028 100%);
+  color: #0a0a0a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(212, 175, 55, 0.4);
+}
+
+/* ============================================
+   SCROLL BEHAVIOR
+   ============================================ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #f4d03f, #d4af37);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #d4af37, #c5a028);
+}
+
+/* ============================================
+   RESPONSIVE UTILITIES
+   ============================================ */
+
+@media (max-width: 768px) {
+  :root {
+    --spacing-section: 4rem;
+  }
+  
+  .btn-gold,
+  .btn-outline-gold {
+    padding: 0.875rem 2rem;
+    font-size: 0.85rem;
+  }
+}
