@@ -50,7 +50,7 @@ const Hero = () => {
                 </p>
 
                 {/* School Name - Script Font */}
-                <h2 className={`text-3xl md:text-5xl mb-6 text-gradient-gold transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`} style={{ fontFamily: "'Great Vibes', cursive" }}>
+                <h2 className={`text-3xl md:text-5xl h-20 text-center flex justify-center items-center mb-6 text-gradient-gold transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`} style={{ fontFamily: "'Great Vibes', cursive" }}>
                     Colegio San Felipe
                 </h2>
 

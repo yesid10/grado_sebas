@@ -7,6 +7,7 @@ import RSVP from '../components/RSVP';
 import Footer from '../components/Footer';
 import Decorations from '../components/Decorations';
 import BackgroundMusic from '../components/BackgroundMusic';
+import ConfettiEffect from '../components/ConfettiEffect';
 
 const AppRouter = () => {
     return (
@@ -16,6 +17,9 @@ const AppRouter = () => {
 
             {/* Background Music */}
             <BackgroundMusic />
+
+            {/* Confetti Effect */}
+            <ConfettiEffect />
 
             {/* Main Content */}
             <main className="flex flex-col gap-9 z-10">

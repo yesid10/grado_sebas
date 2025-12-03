@@ -5,6 +5,7 @@ import gallery3 from '../assets/sebas3.jpg';
 import gallery4 from '../assets/sebas4.jpeg';
 import gallery5 from '../assets/sebas5.jpg';
 import gallery6 from '../assets/sebas6.jpeg';
+import gallery7 from '../assets/sebas7.jpg';
 
 const PhotoGallery = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -17,6 +18,7 @@ const PhotoGallery = () => {
         { id: 5, src: gallery5, alt: 'Foto de graduación 5', caption: 'Nuevos comienzos' },
         { id: 3, src: gallery3, alt: 'Foto de graduación 3', caption: 'Nuevos comienzos' },
         { id: 4, src: gallery4, alt: 'Foto de graduación 4', caption: 'Nuevos comienzos' },
+        { id: 7, src: gallery7, alt: 'Foto de graduación 7', caption: 'Momentos inolvidables' },
         { id: 2, src: gallery2, alt: 'Foto de graduación 2', caption: 'Logros alcanzados' },
         { id: 6, src: gallery6, alt: 'Foto de graduación 6', caption: 'Nuevos comienzos' },
         { id: 1, src: gallery1, alt: 'Foto de graduación 1', caption: 'Momentos inolvidables' },

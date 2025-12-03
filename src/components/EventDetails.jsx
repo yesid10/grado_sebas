@@ -59,13 +59,13 @@ const EventDetails = () => {
                                     Fecha y Hora
                                 </h3>
                                 <p className="text-2xl md:text-3xl font-bold text-white mb-2">
-                                    [Día, Mes Año]
+                                    06 / 12 / 2025
                                 </p>
                                 <p className="text-lg text-gray-300">
-                                    [Hora] - [Hora de finalización]
+                                    12:30 pm - Hasta el amanecer
                                 </p>
                                 <p className="text-sm text-gray-400 mt-2">
-                                    Puntualidad es importante
+                                    Llevar ganas de comer y beber
                                 </p>
                             </div>
                         </div>
@@ -87,14 +87,16 @@ const EventDetails = () => {
                                     Ubicación
                                 </h3>
                                 <p className="text-xl md:text-2xl font-bold text-white mb-2">
-                                    [Nombre del Lugar]
+                                    Casa de Felipa Borda
                                 </p>
                                 <p className="text-base text-gray-300 mb-3">
-                                    [Dirección completa]<br />
-                                    [Ciudad, Departamento]
+                                    "Donde las Celys"<br />
+                                    Cucaita, Boyacá
                                 </p>
                                 <a
-                                    href="#"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://maps.app.goo.gl/m3PQvE8P7jH72HL6A"
                                     className="inline-flex items-center gap-2 text-sm text-[#d4af37] hover:text-[#f4d03f] transition-colors"
                                 >
                                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

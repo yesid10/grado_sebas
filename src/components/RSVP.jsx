@@ -28,7 +28,7 @@ const RSVP = () => {
 
     const handleWhatsAppClick = () => {
         // Replace with actual WhatsApp number
-        const phoneNumber = '573001234567'; // Format: country code + number (no + or spaces)
+        const phoneNumber = '573117962640'; // Format: country code + number (no + or spaces)
         const message = encodeURIComponent('¡Hola! Confirmo mi asistencia a la ceremonia de graduación.');
         window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
     };
@@ -79,11 +79,11 @@ const RSVP = () => {
                     <div className="text-gray-300">
                         <p className="mb-4">También puedes confirmar por:</p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                            <a href="tel:+573001234567" className="flex items-center gap-2 text-[#d4af37] hover:text-[#f4d03f] transition-colors">
+                            <a href="tel:+573117962640" className="flex items-center gap-2 text-[#d4af37] hover:text-[#f4d03f] transition-colors">
                                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                                 </svg>
-                                <span>+57 300 123 4567</span>
+                                <span>+57 311 796 2640</span>
                             </a>
                             <span className="hidden sm:block text-gray-600">•</span>
                             <a href="mailto:ejemplo@email.com" className="flex items-center gap-2 text-[#d4af37] hover:text-[#f4d03f] transition-colors">
