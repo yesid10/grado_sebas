@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import confetti from 'canvas-confetti';
 
 const RSVP = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -27,10 +28,23 @@ const RSVP = () => {
     }, []);
 
     const handleWhatsAppClick = () => {
-        // Replace with actual WhatsApp number
-        const phoneNumber = '573117962640'; // Format: country code + number (no + or spaces)
-        const message = encodeURIComponent('¡Hola! Confirmo mi asistencia a la ceremonia de graduación.');
-        window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+        // Disparar confeti
+        const colors = ['#d4af37', '#f4d03f', '#FFD700', '#000000', '#1a1a1a'];
+
+        // Confeti explosión central
+        confetti({
+            particleCount: 150,
+            spread: 70,
+            origin: { y: 0.6 },
+            colors: colors
+        });
+
+        // Abrir WhatsApp después de un pequeño delay
+        setTimeout(() => {
+            const phoneNumber = '573117962640';
+            const message = encodeURIComponent('¡Hola! Confirmo mi asistencia a la ceremonia de graduación.');
+            window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+        }, 1000);
     };
 
     return (
@@ -86,11 +100,11 @@ const RSVP = () => {
                                 <span>+57 311 796 2640</span>
                             </a>
                             <span className="hidden sm:block text-gray-600">•</span>
-                            <a href="mailto:ejemplo@email.com" className="flex items-center gap-2 text-[#d4af37] hover:text-[#f4d03f] transition-colors">
+                            <a href="mailto:vanegassebastian659@gmail.com" className="flex items-center gap-2 text-[#d4af37] hover:text-[#f4d03f] transition-colors">
                                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                 </svg>
-                                <span>ejemplo@email.com</span>
+                                <span>vanegassebastian659@gmail.com</span>
                             </a>
                         </div>
                     </div>
@@ -98,7 +112,7 @@ const RSVP = () => {
                     {/* Deadline Note */}
                     <div className="mt-8 p-4 rounded-xl bg-black/30 border border-[#d4af37]/20">
                         <p className="text-sm text-gray-400">
-                            <span className="text-[#d4af37] font-semibold">Nota:</span> Por favor confirma tu asistencia antes del [Fecha límite]
+                            <span className="text-[#d4af37] font-semibold">Nota:</span> Asi no confirmes asistencia te espero ❤️
                         </p>
                     </div>
                 </div>

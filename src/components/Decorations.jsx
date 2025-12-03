@@ -75,7 +75,7 @@ const Decorations = () => {
 
             {/* Geometric Patterns - Background */}
             <div className="fixed inset-0 pointer-events-none z-0 opacity-5">
-                <div className="absolute top-1/4 left-1/4 w-32 h-32 border-2 border-[#d4af37] rotate-45 animate-rotate"></div>
+                <div className="absolute top-1/4 left-1/4 w-32 h-32 border-2 border-[#614c06] rotate-45 animate-rotate"></div>
                 <div className="absolute bottom-1/4 right-1/4 w-24 h-24 border-2 border-[#f4d03f] rotate-12 animate-rotate" style={{ animationDirection: 'reverse' }}></div>
             </div>
 
@@ -84,14 +84,14 @@ const Decorations = () => {
                 {[...Array(10)].map((_, i) => (
                     <div
                         key={i}
-                        className="absolute w-1 h-1 bg-[#f4d03f] rounded-full animate-pulse-gold"
+                        className="absolute w-1 h-1 bg-[#f1c100] rounded-full animate-pulse-gold"
                         style={{
                             top: `${Math.random() * 100}%`,
                             left: `${Math.random() * 100}%`,
                             animationDelay: `${i * 0.5}s`,
                         }}
                     >
-                        <div className="absolute inset-0 bg-[#f4d03f] rounded-full blur-sm"></div>
+                        <div className="absolute inset-0 bg-[#fdca00] rounded-full blur-sm"></div>
                     </div>
                 ))}
             </div>

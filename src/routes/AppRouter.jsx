@@ -24,8 +24,8 @@ const AppRouter = () => {
             {/* Main Content */}
             <main className="flex flex-col gap-9 z-10">
                 <Hero />
-                <EventDetails />
                 <InvitationMessage />
+                <EventDetails />
                 <PhotoGallery />
                 <RSVP />
             </main>

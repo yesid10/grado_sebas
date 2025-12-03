@@ -46,19 +46,19 @@ const Hero = () => {
 
                 {/* Pre-title */}
                 <p className={`text-sm md:text-base tracking-[0.3em] uppercase text-[#d4af37] mb-4 font-light transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-                    El Graduado del
+                    Hoy culmino una etapa importante
                 </p>
 
                 {/* School Name - Script Font */}
                 <h2 className={`text-3xl md:text-5xl h-20 text-center flex justify-center items-center mb-6 text-gradient-gold transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`} style={{ fontFamily: "'Great Vibes', cursive" }}>
-                    Colegio San Felipe
+                    y deseo celebrarla contigo
                 </h2>
 
                 {/* Main Title */}
                 <h1 className={`text-5xl md:text-7xl lg:text-8xl font-bold mb-6 transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}`} style={{ fontFamily: "'Playfair Display', serif" }}>
-                    <span className="block text-white mb-2">Te invita a la</span>
-                    <span className="block text-gradient-gold">CEREMONIA</span>
-                    <span className="block text-3xl md:text-5xl lg:text-6xl mt-2" style={{ fontFamily: "'Great Vibes', cursive" }}>de Grado</span>
+                    <span className="block text-white mb-2">Acompáñanos</span>
+                    <span className="block text-gradient-gold">en este momento</span>
+                    <span className="block text-3xl md:text-5xl lg:text-6xl mt-2" style={{ fontFamily: "'Great Vibes', cursive" }}>tan especial</span>
                 </h1>
 
                 {/* Decorative Line */}
@@ -66,8 +66,8 @@ const Hero = () => {
 
                 {/* Subtitle */}
                 <p className={`text-base md:text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed transition-all duration-1000 delay-800 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-                    Acompáñanos en este momento tan especial mientras celebramos<br className="hidden md:block" />
-                    el logro de nuestros sueños y el inicio de nuevos caminos
+                    Con la ayuda de Dios, mi familia y amigos, he llegado hasta aquí. <br />
+                    ¡Mi graduación también es de ustedes!
                 </p>
 
                 {/* Scroll Indicator */}

@@ -59,13 +59,13 @@ const EventDetails = () => {
                                     Fecha y Hora
                                 </h3>
                                 <p className="text-2xl md:text-3xl font-bold text-white mb-2">
-                                    06 / 12 / 2025
+                                    Sábado 6 de diciembre de 2025
                                 </p>
                                 <p className="text-lg text-gray-300">
-                                    12:30 pm - Hasta el amanecer
+                                    1:00 pm
                                 </p>
                                 <p className="text-sm text-gray-400 mt-2">
-                                    Llevar ganas de comer y beber
+                                    No faltes a esta celebración
                                 </p>
                             </div>
                         </div>
@@ -90,7 +90,7 @@ const EventDetails = () => {
                                     Casa de Felipa Borda
                                 </p>
                                 <p className="text-base text-gray-300 mb-3">
-                                    "Donde las Celys"<br />
+                                    "Donde las Chicas Celys"<br />
                                     Cucaita, Boyacá
                                 </p>
                                 <a
@@ -104,62 +104,6 @@ const EventDetails = () => {
                                     </svg>
                                     Ver en Google Maps
                                 </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Dress Code Card */}
-                    <div className={`glass-card rounded-2xl p-8 md:p-10 transition-all duration-1000 delay-600 hover:scale-105 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
-                        <div className="flex w-full justify-around items-center">
-                            <div className="flex-shrink-0">
-                                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#f4d03f] to-[#d4af37] flex items-center justify-center">
-                                    <svg className="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div className="flex w-2/3 justify-end flex-col">
-                                <h3 className="text-xl md:text-2xl font-semibold text-[#f4d03f] mb-3" style={{ fontFamily: "'Playfair Display', serif" }}>
-                                    Código de Vestimenta
-                                </h3>
-                                <p className="text-xl md:text-2xl font-bold text-white mb-2">
-                                    Formal / Elegante
-                                </p>
-                                <p className="text-base text-gray-300">
-                                    Vestimenta formal para una ocasión especial
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Additional Info Card */}
-                    <div className={`glass-card rounded-2xl p-8 md:p-10 transition-all duration-1000 delay-800 hover:scale-105 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
-                        <div className="flex w-full justify-around items-center">
-                            <div className="flex-shrink-0">
-                                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#f4d03f] to-[#d4af37] flex items-center justify-center">
-                                    <svg className="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div className="flex w-2/3 justify-end flex-col">
-                                <h3 className="text-xl md:text-2xl font-semibold text-[#f4d03f] mb-3" style={{ fontFamily: "'Playfair Display', serif" }}>
-                                    Información Adicional
-                                </h3>
-                                <ul className="text-base text-gray-300 space-y-2">
-                                    <li className="flex items-start gap-2">
-                                        <span className="text-[#d4af37] mt-1">•</span>
-                                        <span>Recepción 30 minutos antes</span>
-                                    </li>
-                                    <li className="flex items-start gap-2">
-                                        <span className="text-[#d4af37] mt-1">•</span>
-                                        <span>Habrá servicio de fotografía</span>
-                                    </li>
-                                    <li className="flex items-start gap-2">
-                                        <span className="text-[#d4af37] mt-1">•</span>
-                                        <span>Recepción después de la ceremonia</span>
-                                    </li>
-                                </ul>
                             </div>
                         </div>
                     </div>

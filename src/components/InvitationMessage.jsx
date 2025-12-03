@@ -58,7 +58,7 @@ const InvitationMessage = () => {
                                 y el comienzo de nuevos sueños en la
                             </p>
                             <h3 className="text-3xl md:text-4xl font-bold text-white mb-6" style={{ fontFamily: "'Playfair Display', serif" }}>
-                                Ceremonia de Graduación
+                                Celebración de Graduación
                             </h3>
                             <p className="text-2xl md:text-3xl text-gradient-gold mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
                                 Grado 11 - Bachillerato
